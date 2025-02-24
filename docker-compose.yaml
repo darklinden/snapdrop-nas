@@ -1,0 +1,10 @@
+services:
+    node:
+        image: "snapdrop_server:20250224"
+        user: "node"
+    nginx:
+        image: "snapdrop_client:20250224"
+        depends_on:
+            - node
+        ports:
+            - "41816:41816"
