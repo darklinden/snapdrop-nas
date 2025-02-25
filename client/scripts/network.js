@@ -523,6 +523,9 @@ class Events {
 RTCPeer.config = {
     'sdpSemantics': 'unified-plan',
     'iceServers': [{
-        urls: []
+        urls: [
+            "stun:stun.qq.com:3478",
+            "stun:stun.miwifi.com:3478"
+        ]
     }]
 }
